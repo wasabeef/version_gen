@@ -1,7 +1,7 @@
 name: version_gen
 
 description: The Dart code generator for your packages version.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/wasabeef/version_gen
 repository: https://github.com/wasabeef/version_gen
 documentation: https://github.com/wasabeef/version_gen
