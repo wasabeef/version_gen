@@ -1,6 +1,7 @@
 @TestOn('vm')
 import 'dart:io';
 
+import 'package:path/path.dart';
 import 'package:test/test.dart';
 import 'package:version_gen/version_gen.dart';
 
@@ -15,7 +16,7 @@ void main() {
       pubspec: pubspec,
       genFile: generatedFileName,
     );
-    final actual = File('$generatedPath/$generatedFileName')
+    final actual = File(join(generatedPath, generatedFileName))
         .readAsStringSync()
         .replaceAll('\r\n', '\n');
     final expected = File(fact).readAsStringSync().replaceAll('\r\n', '\n');
@@ -32,7 +33,7 @@ void main() {
       pubspec: pubspec,
       genFile: generatedFileName,
     );
-    final actual = File('$generatedPath/$generatedFileName')
+    final actual = File(join(generatedPath, generatedFileName))
         .readAsStringSync()
         .replaceAll('\r\n', '\n');
     final expected = File(fact).readAsStringSync().replaceAll('\r\n', '\n');
