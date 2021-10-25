@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-dart run format && dart run analyze
+melos run format && melos run analyze
