@@ -1,11 +1,6 @@
-## VersionGen
-
-<p align="center">
-  <a href="https://pub.dev/packages/flutter_gen">
-    <img src="https://github.com/wasabeef/version_gen/raw/main/art/VersionGen.png" width="200px"/>
-  </a>
-</p>
-<p align="center">
+<img src="https://github.com/wasabeef/version_gen/raw/main/art/VersionGen.png" width="200px" align="left"/>
+<br><br>
+<p align="left">
   <a href="https://pub.dartlang.org/packages/version_gen">
     <img src="https://img.shields.io/pub/v/version_gen.svg">
   </a>
@@ -15,14 +10,10 @@
   <a href="https://pub.dev/packages/flutter_lints">
     <img src="https://img.shields.io/badge/style-flutter_lints-40c4ff.svg" />
   </a>
+  <p>The Dart code generator for your package versions.<br>
+  There is no way to get the package version from the code in the Dart ecosystem.</p>
+<br><br>
 </p>
-
-The Dart code generator for your package versions.
-
-## Motivation
-
-There is no way to get the package version from the code in the Dart ecosystem.  
-When you develop the Dart Command-line tool, you may want to use the `--version` option or something similar to display it.
 
 ## Installation
 
