@@ -8,7 +8,7 @@ import 'package:version_gen/version_gen.dart';
 void main() {
   test('Change output path', () async {
     const pubspec = 'test_resources/pubspec.yaml';
-    const generatedPath = 'test_resources/lib/gen/';
+    const generatedPath = 'lib/gen/';
     const generatedFileName = 'version.gen.dart';
     const fact = 'test_resources/actual_data/version.gen.dart';
 
