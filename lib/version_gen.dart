@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:build/build.dart';
+import 'package:path/path.dart';
 import 'package:yaml/yaml.dart';
 
 Builder build(BuilderOptions options) {
@@ -22,8 +23,9 @@ class VersionGenBuilder extends Builder {
   }) {
     final settings = loadYaml(File(pubspec).readAsStringSync()) as Map?;
     final version = settings?['version'];
-    final path = settings?['version_gen']?['path'] ?? 'lib/gen/';
-    final outputFile = File('$path/$genFile');
+    final path = settings?['version_gen']?['path'] ?? 'lib/gen';
+
+    final outputFile = File(join(path, genFile));
     if (!outputFile.existsSync()) {
       outputFile.createSync(recursive: true);
     }
