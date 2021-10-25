@@ -1,0 +1,41 @@
+name: version_gen
+
+packages:
+  - example/*
+  - ./**
+
+ide:
+  intellij:
+    true
+  vscode:
+    true
+
+scripts:
+
+  pub:upgrade:
+    run: |
+      melos exec --flutter -- exec flutter pub upgrade
+      melos exec --no-flutter -- exec dart pub upgrade
+  pub:get:
+    run: |
+      melos exec --flutter -- exec flutter pub get
+      melos exec --no-flutter -- exec dart pub get
+  analyze: melos exec -- exec dart analyze .
+  
+  format: ./scripts/dartfmt.sh
+
+  build:
+    run: |
+      melos exec -- exec flutter build apk
+    select-package:
+      scope: example
+
+  example:build_runner:
+    run: |
+      melos exec \
+      -- exec flutter packages pub run build_runner build --delete-conflicting-outputs
+    select-package:
+      scope: example
+
+  unit:test: 
+    run: dart run test

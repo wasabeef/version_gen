@@ -1,0 +1,19 @@
+name: version_gen
+
+description: The Dart code generator for your packages version.
+version: 1.0.0
+homepage: https://github.com/wasabeef/version_gen
+repository: https://github.com/wasabeef/version_gen
+documentation: https://github.com/wasabeef/version_gen
+issue_tracker: https://github.com/wasabeef/version_gen/issues
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  build: '>=2.0.0 <3.0.0'
+  yaml: '>=3.0.0 <4.0.0'
+
+dev_dependencies:
+  flutter_lints: '>=1.0.4 <2.0.0'
+  build_test: '>=2.0.0 <3.0.0'

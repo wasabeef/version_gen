@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      version_gen:
+        enabled: true
+
+builders:
+  version_gen:
+    import: "package:version_gen/version_gen.dart"
+    builder_factories: [ "build" ]
+    build_extensions: { "$lib$": [ "version.gen.dart" ] }
+    auto_apply: root_package
+    build_to: source
