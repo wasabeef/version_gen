@@ -4,8 +4,8 @@
   <a href="https://pub.dartlang.org/packages/version_gen">
     <img src="https://img.shields.io/pub/v/version_gen.svg">
   </a>
-  <a href="https://github.com/wasabeef/version_gen/actions?query=workflow%3A%22Dart+CI%22">
-    <img src="https://github.com/wasabeef/version_gen/workflows/Dart%20CI/badge.svg" />
+  <a href="https://github.com/wasabeef/version_gen/actions/workflows/dart-ci.yaml">
+    <img src="https://github.com/wasabeef/version_gen/actions/workflows/dart-ci.yaml/badge.svg" />
   </a>
   <a href="https://pub.dev/packages/flutter_lints">
     <img src="https://img.shields.io/badge/style-flutter_lints-40c4ff.svg" />
