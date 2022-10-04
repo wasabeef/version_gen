@@ -15,6 +15,14 @@ body:
       placeholder: ex. 5.0.0
     validations:
       required: false
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+        required: true
   - type: dropdown
     id: command-type
     attributes:
