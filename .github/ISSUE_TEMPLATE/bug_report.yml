@@ -7,6 +7,13 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        label: I have searched the existing issues
+        required: true
   - type: input
     id: version
     attributes:
@@ -40,9 +47,7 @@ body:
     attributes:
       label: Relevant a pubspec.yaml.
       description: Please copy and pates your pubspec.yaml.
-      placeholder: 
-        ex. $ cat pubspec.yaml | pbcopy
-      value: |
+      placeholder: |
         flutter_gen:
           output: lib/gen/
           line_length: 80
@@ -77,4 +82,3 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
-
