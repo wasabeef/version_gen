@@ -19,10 +19,9 @@
 
 1. Add [build_runner] and [VersionGen] to your package's pubspec.yaml file:
 
-```
-dev_dependencies:
-  build_runner:
-  version_gen:
+```sh
+$ dart pub add --dev build_runner
+$ dart pub add --dev version_gen
 ```
 
 2. Install [VersionGen]
@@ -33,7 +32,7 @@ $ flutter pub get
 
 3. Use [VersionGen]
 
-```
+```sh
 $ flutter packages pub run build_runner build
 ```
 
