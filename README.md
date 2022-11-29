@@ -17,7 +17,7 @@
 
 ## Installation
 
-1. Add [build_runner] and [VersionGen] to your package's pubspec.yaml file:
+1. Add [build_runner] and [VersionGen] to your package's `pubspec.yaml` file:
 
 ```sh
 $ dart pub add --dev build_runner
