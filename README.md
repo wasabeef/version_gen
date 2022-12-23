@@ -20,8 +20,7 @@
 1. Add [build_runner] and [VersionGen] to your package's `pubspec.yaml` file:
 
 ```sh
-$ dart pub add --dev build_runner
-$ dart pub add --dev version_gen
+$ dart pub add --dev build_runner version_gen
 ```
 
 2. Install [VersionGen]
