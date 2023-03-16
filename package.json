@@ -2,7 +2,7 @@
     "name": "version_gen",
     "author": "wasabeef",
     "devDependencies": {
-      "husky": "7.0.4"
+      "husky": "8.0.3"
     },
     "scripts": {
       "prepare": "husky install"
