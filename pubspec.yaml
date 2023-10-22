@@ -8,7 +8,7 @@ documentation: https://github.com/wasabeef/version_gen
 issue_tracker: https://github.com/wasabeef/version_gen/issues
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '<4.0.0'
 
 dependencies:
   build: '>=2.0.0 <3.0.0'
